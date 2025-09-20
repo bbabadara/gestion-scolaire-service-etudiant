@@ -2,7 +2,7 @@ pipeline {
     agent any  // Exécute sur n'importe quel agent Jenkins
 
     environment {
-        DOCKER_HUB_REPO = 'bbabadara/etudiant-app'  // Remplacez par votre repo Docker Hub (ex: monuser/etudiant)
+        DOCKER_HUB_REPO = 'bbabadara/etudiant-app'  // Remplacez par votre repo Docker Hub 
         IMAGE_TAG = "latest"  // Tag avec le numéro de build Jenkins
         RENDER_SERVICE_ID = 'srv-d36vii8gjchc73br64p0'  // ID de votre service Render (trouvez-le dans l'URL du service sur Render)
     }
