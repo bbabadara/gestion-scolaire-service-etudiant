@@ -14,14 +14,14 @@ pipeline {
             }
         }
 
-        stage('Build Maven et Test') {
-            steps {
-                script {
-                    // Build Maven (comme dans votre Dockerfile, mais exécuté ici pour tests)
-                    sh 'mvn clean package -DskipTests'  // Ou sans skip si vous voulez tester
-                }
-            }
-        }
+        // stage('Build Maven et Test') {
+        //     steps {
+        //         script {
+        //             // Build Maven (comme dans votre Dockerfile, mais exécuté ici pour tests)
+        //             sh 'mvn clean package -DskipTests'  // Ou sans skip si vous voulez tester
+        //         }
+        //     }
+        // }
 
         stage('Build Docker Image') {
             steps {
